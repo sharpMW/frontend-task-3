@@ -14,47 +14,57 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">HomeBakes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle Navigation">
+    <div class="navigation container-fluid"> 
+           <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand m-4" href="#">HomeBakes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> </span>
             </button>
-            <div class="collapse navbar-collapse">
-                <div class=" navbar-nav">
-                <a href="#" class="nav-item nav-link active">Recipes</a>
-                <a href="#" class="nav-item nav-link">Tricks</a>
-                <a href="#" class="nav-item nav-link">Shops</a>
-                </div> 
+            <div class="collapse navbar-collapse" id="navBarSupportedContent">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#footer">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tricks">Tricks</a>
+                    </li>
+                </ul> 
             </div>
-        </div>
     </nav>
+    </div>
 
     <!-- Title Section -->
-    <section class="title">
-        <div class="container-fluid d-flex flex-lg-row flex-sm-column flex-md-column justify-content-around align-middle">
-            <div class="title-content">
-                <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
-                <div class="w-20">
-                <h2 class="title-head w-10">
-                    Delicious and Easy Homemmade Recipes that makes you Rise & Shine
-                    
+    <section class="title p-5">
+        <div class="container-fluid d-flex flex-lg-row flex-sm-column flex-md-column justify-content-center align-middle">
+            <div class="title-content w-50">
+                <div class="w-50 mx-auto">
+                <h2 class="title-head">
+                    Delicious and Easy Homemmade Recipes that makes you Rise & Shine 
                 </h2>
                 <p class="title-para">Don't forget to checkout our <i>tricks</i> section!</p>
                 </div>
             </div>
-            <img class="landing-lady" src="./images/landing_lady.svg">
+            <div class="image pr-5"><img class="landing-lady" src="./images/landing_lady.svg">
+            </div>
+            
         </div>
+        <img class="p-0 m-0 position-absolute top-50 start-0 translate-middle-y"
+         src="./images/Ellipse 1.svg">
+         <div class="position-absolute top-0 start-50 translate-middle p-0 m-0"><img class="rotate"
+         src="./images/Ellipse 1.svg"></div>
     </section>
 
     <!-- Featured Recipes Section-->
-    <section class="recipes">
-        <div class="container-fluid">
-            <h3 class="recipes-head">Featured Recipes</h3>
-            <div class="d-flex justify-content-around">
-                <div class="card" style="width: 24rem;">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./images/pastry.svg">
+    <section class="recipes p-5">
+        <div class="container-fluid w-75">
+            <h3 class="recipes-head p-2">Featured Recipes</h3>
+            <div class="d-flex justify-content-center">
+                <div class="card m-4" style="width: 25rem;">
+                    <div class="card-body m-0 position-relative">
+                        <img class="card-img-top w-25 position-absolute top-0 start-100 translate-middle" src="./images/pastry.svg">
                         <h5 class="card-title">Chocolate Cake</h5>
                         <p class="card-text">
                             <ol class="card-list">
@@ -66,9 +76,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="card" style="width: 24rem;">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./images/donut.svg">
+                <div class="card m-4" style="width: 25rem;">
+                    <div class="card-body m-0 position-relative">
+                        <img class="card-img-top w-25 position-absolute top-0 start-100 translate-middle" src="./images/donut.svg">
                         <h5 class="card-title">Creme Donuts</h5>
                         <p class="card-text">
                             <ol class="card-list">
@@ -82,24 +92,26 @@
                 </div>
             </div>             
         </div>
+        <img
+         src="./images/Ellipse 1.svg">
     </section>
 
     <!-- Sneaky Tricks Section -->
-    <section class="tricks">
+    <section class="tricks p-5">
         <div class="container-fluid">
-            <h3 class="tricks-heading">Sneaky Tricks!</h3>
+            <h3 class="tricks-heading ps-5 ms-5">Sneaky Tricks!</h3>
             <div class="d-flex justify-content-around">  
-                <ol class="tricks-list">
+                <ol class="tricks-list m-4">
                     <li class="tricks-item">
-                        <h4 class="tricks-item-head">Add this with this to get this</h4>
+                        <h5 class="tricks-item-head">Add this with this to get this</h5>
                         <p class="tricks-item-para">Take a bowl and mix flour, cocoa powder, milk powder and lorem ipsum</p>
                     </li>
                     <li class="tricks-item">
-                        <h4 class="tricks-item-head">Add this with this to get this</h4>
+                        <h5 class="tricks-item-head">Add this with this to get this</h5>
                         <p class="tricks-item-para">Take a bowl and mix flour, cocoa powder, milk powder and lorem ipsum</p>
                     </li>
                     <li class="tricks-item">
-                        <h4 class="tricks-item-head">Add this with this to get this</h4>
+                        <h5 class="tricks-item-head">Add this with this to get this</h5>
                         <p class="tricks-item-para">Take a bowl and mix flour, cocoa powder, milk powder and lorem ipsum</p>
                     </li>
                 </ol>
@@ -109,25 +121,25 @@
     </section>
     
     <!-- Footer -->
-    <section class="footer">
+    <section class="footer p-5">
         <div class="container-fluid d-flex justify-content-even">
-            <div class="footer-items p-2 w-">
-                <h6 class="footer-head">About</h6>
-                <p class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</p>
+            <div class="footer-items px-5">
+                <h5 class="footer-head">About</h5>
+                <small class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</small>
             </div>
-            <div class="footer-items p-2">
-                <h6 class="footer-head">Address</h6>
-                <p class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</p>
+            <div class="footer-items px-5">
+                <h5 class="footer-head">Address</h5>
+                <small class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</small>
             </div>
-            <div class="footer-items p-2">
-                <h6 class="footer-head">Contact</h6>
-                <p class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</p>
+            <div class="footer-items px-5">
+                <h5 class="footer-head">Contact</h5>
+                <small class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</small>
             </div>
-            <div class="footer-items p-2">
-                <h6 class="footer-head">Socials</h6>
-                <div class="d-flex">
-                    <img class="social-icon" src="./images/insta.svg">
-                    <img class="social-icon" src="./images/fb.svg">
+            <div class="footer-items px-5">
+                <h5 class="footer-head">Socials</h5>
+                <div class="d-flex justify-content-around">
+                   <div class="m-1"> <img class="social-icon" src="./images/insta.svg"></div>
+                    <div class="m-1"><img class="social-icon" src="./images/fb.svg"></div>
                 </div>
             </div>
         </div>
