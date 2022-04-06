@@ -17,9 +17,13 @@ div.card {
 div {
     margin: auto;
 }
-.rotate{
+.rotate1{
     display: inline-block;
     transform: rotate(90deg);
+}
+.rotate2{
+    display: inline-block;
+    transform: rotate(180deg);
 }
 /* .mt-n1 {
     margin-top: -10rem !important;

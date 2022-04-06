@@ -37,7 +37,7 @@
     </div>
 
     <!-- Title Section -->
-    <section class="title p-5">
+    <section class="title p-5 position-relative">
         <div class="container-fluid d-flex flex-lg-row flex-sm-column flex-md-column justify-content-center align-middle">
             <div class="title-content w-50">
                 <div class="w-50 mx-auto">
@@ -53,9 +53,9 @@
         </div>
         <img class="p-0 m-0 position-absolute top-50 start-0 translate-middle-y"
          src="./images/Ellipse 1.svg">
-         <div class="position-absolute top-0 start-50 translate-middle p-0 m-0"><img class="rotate"
-         src="./images/Ellipse 1.svg"></div>
     </section>
+    <div class="position-absolute top-0 translate-middle-y start-50 p-0 m-0"><img class="rotate1"
+        src="./images/Ellipse 1.svg"></div>
 
     <!-- Featured Recipes Section-->
     <section class="recipes p-5">
@@ -92,12 +92,10 @@
                 </div>
             </div>             
         </div>
-        <img
-         src="./images/Ellipse 1.svg">
     </section>
 
     <!-- Sneaky Tricks Section -->
-    <section class="tricks p-5">
+    <section class="tricks p-5 position-relative">
         <div class="container-fluid">
             <h3 class="tricks-heading ps-5 ms-5">Sneaky Tricks!</h3>
             <div class="d-flex justify-content-around">  
@@ -116,13 +114,15 @@
                     </li>
                 </ol>
                 <img class="tricks-img" src="./images/sneaky_tricks_illustration.svg">
-            </div>      
+            </div>     
         </div>
+        <div class="pr-5 position-absolute top-0 end-0 translate-middle-x translate-middle-y"><img
+            src="./images/Ellipse 1.svg" class="rotate2"> </div> 
     </section>
     
     <!-- Footer -->
     <section class="footer p-5">
-        <div class="container-fluid d-flex justify-content-even">
+        <div class="container-fluid d-flex flex-md-column justify-content-md-around justify-content-even align-items-md-start">
             <div class="footer-items px-5">
                 <h5 class="footer-head">About</h5>
                 <small class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</small>
@@ -135,7 +135,7 @@
                 <h5 class="footer-head">Contact</h5>
                 <small class="footer-para">I don't know what's worth fighting for and why I have to scream! But now, I have some clarity to show you what I mean.</small>
             </div>
-            <div class="footer-items px-5">
+            <div class="footer-items px-5 px-md-0">
                 <h5 class="footer-head">Socials</h5>
                 <div class="d-flex justify-content-around">
                    <div class="m-1"> <img class="social-icon" src="./images/insta.svg"></div>
