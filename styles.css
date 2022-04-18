@@ -25,3 +25,11 @@ div.landing-lady{
     display: inline-block;
     transform: rotate(180deg);
 }
+.on-top {
+    position: relative;
+    z-index: 1;
+}
+.on-bottom {
+    position: relative;
+    z-index: 0;
+}
